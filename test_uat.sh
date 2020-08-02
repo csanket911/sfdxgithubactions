@@ -5,11 +5,11 @@ git checkout test
 # rebase from origin/master and resolve any conflicts
 env -i git pull --rebase origin master
 # switch to the dev branch
-git checkout devint
+git checkout uat
 # rebase from origin/devint
 # (which could contain merged branches from other team members)
-env -i git pull --rebase origin devint
+env -i git pull --rebase origin uat
 # merge your branch
 git merge test
 # push changes to origin/devint (which triggers a deploy)
-git push origin devint
+git push origin uat
