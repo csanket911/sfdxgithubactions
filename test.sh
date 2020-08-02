@@ -2,7 +2,7 @@
 if [ -z "$1" ]
   then
     echo "No argument supplied"
-    exit1
+    exit 1
 fi
 # checkout your feature branch and rebase from master
 git checkout "$1"
