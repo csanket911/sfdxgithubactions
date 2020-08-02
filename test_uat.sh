@@ -16,6 +16,6 @@ git checkout uat
 # (which could contain merged branches from other team members)
 env -i git pull --rebase origin uat
 # merge your branch
-git merge "$1"
+git merge --no-ff "$1" -m "Merging $branch"
 # push changes to origin/uat
 git push origin uat
