@@ -15,6 +15,6 @@ git checkout devint
 # (which could contain merged branches from other team members)
 env -i git pull --rebase origin devint
 # merge your branch
-git merge "$1"
+git merge "$1" -m "Merging $branch"
 # push changes to origin/devint
 git push origin devint
