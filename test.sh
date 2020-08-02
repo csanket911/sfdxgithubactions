@@ -13,7 +13,7 @@ env -i git pull --rebase origin master
 git checkout devint
 # rebase from origin/devint
 # (which could contain merged branches from other team members)
-git pull --rebase origin devint
+env -i git pull --rebase origin devint
 # merge your branch
 git merge "$1" - "Merging $branch"
 # push changes to origin/devint
