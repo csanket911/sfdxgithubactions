@@ -23,6 +23,6 @@ jobs:
         node-version: '10.x'
     - run: npm install
 
-    - uses: mcanog/setup-pmd@v1
+    - uses: krukmat/setup-pmd@v0.4
     - name: run-pmd
       run: pmd -d $GITHUB_WORKSPACE/force-app/main/default/classes -R $GITHUB_WORKSPACE/pmdruleset.xml -f text
