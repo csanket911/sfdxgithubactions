@@ -12,7 +12,6 @@ jobs:
       with:
         node-version: '10.x'
     - run: npm install
-    - run: npm test
 
     - uses: sfdx-actions/setup-pmd@v1
     - name: run-pmd
