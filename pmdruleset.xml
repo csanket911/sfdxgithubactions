@@ -3,15 +3,13 @@
     <description>Default Apex PMD Rules</description>
 
     <rule ref="category/apex/bestpractices.xml"/>
-    <rule ref="rulesets/apex/braces.xml"/>
-    <rule ref="rulesets/apex/complexity.xml"/>
-    <rule ref="rulesets/apex/empty.xml"/>
-    <rule ref="rulesets/apex/metrics.xml"/>
-    <rule ref="rulesets/apex/performance.xml"/>
-    <rule ref="rulesets/apex/ruleset.xml"/>
-    <rule ref="rulesets/apex/security.xml"/>
-    <rule ref="rulesets/apex/style.xml"/>
+    <rule ref="category/apex/codestyle.xml"/>
+    <rule ref="category/apex/design.xml"/>
+    <rule ref="category/apex/errorprone.xml"/>
+    <rule ref="category/apex/performance.xml"/>
+    <rule ref="rulesets/apex/quickstart.xml"/>
+    <rule ref="category/apex/security.xml"/>
 
 	<rule ref="category/vf/bestpractices.xml"/>
-    <rule ref="rulesets/vf/security.xml"/>
+    <rule ref="category/vf/security.xml"/>
 </ruleset>
