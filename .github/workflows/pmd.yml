@@ -11,4 +11,4 @@ jobs:
     
     - uses: krukmat/setup-pmd@v0.4
     - name: run-pmd
-      run: pmd -d $GITHUB_WORKSPACE/force-app/main/default/classes -R $GITHUB_WORKSPACE/pmdruleset.xml -cache $GITHUB_WORKSPACE/pmdcache.txt -l apex -f textcolor
+      run: pmd -d $GITHUB_WORKSPACE/force-app/main/default/classes -R $GITHUB_WORKSPACE/pmdruleset.xml -l apex -f textcolor
