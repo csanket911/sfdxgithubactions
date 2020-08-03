@@ -12,13 +12,7 @@ jobs:
       with:
         node-version: '10.x'
     - run: npm install
-    - run: npm test
 
-    - name: Install Salesforce CLI
-      run: |
-        npm install sfdx-cli
-        node_modules/sfdx-cli/bin/run --version
-        node_modules/sfdx-cli/bin/run plugins --core
-        
-    - name: Run Apex test
-      run: node_modules/sfdx-cli/bin/run force:apex:test:run -c -r human
+    - uses: sfdx-actions/setup-pmd@v1
+    - name: run-pmd
+      run: pmd -d ./force-app/main/default/classes -R category/apex/design.xml -f text
