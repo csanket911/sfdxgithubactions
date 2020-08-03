@@ -18,11 +18,7 @@ jobs:
         java-version: '13.0.2'
         java-package: jre
         architecture: x64
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-    - run: npm install
 
     - uses: krukmat/setup-pmd@v0.4
     - name: run-pmd
-      run: pmd -d $GITHUB_WORKSPACE/force-app/main/default/classes -R $GITHUB_WORKSPACE/pmdruleset.xml -l apex -f xml > report.xml
+      run: pmd -d $GITHUB_WORKSPACE/force-app/main/default/classes -R $GITHUB_WORKSPACE/pmdruleset.xml -l apex -f xml
