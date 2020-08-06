@@ -14,5 +14,6 @@ jobs:
     - uses: krukmat/setup-pmd@v0.4
     - name: run-pmd
       run: pmd -d $GITHUB_WORKSPACE/force-app/main/default/classes -R $GITHUB_WORKSPACE/pmdruleset.xml -l apex -f textcolor
+    - uses: krukmat/setup-pmd@v0.4
     - name: Copy-Paste Detection
       run: cpd --minimum-tokens 100
