@@ -17,4 +17,4 @@ env -i git pull --rebase origin devint
 # merge your branch
 git merge --no-ff "$1" -m "Merging $branch"
 # push changes to origin/devint
-git push origin devint -f
+git push origin devint

@@ -1,6 +1,6 @@
 public with sharing class HelloWorld {
     public String hey(String name) {
-        //test in devint
+        //test
         return 'How are you ' + name + '?';
     }
 }
