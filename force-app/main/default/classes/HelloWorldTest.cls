@@ -4,7 +4,7 @@ public class HelloWorldTest {
     static void checkMessage() {
         final String name = 'Jeff';
         final String expectedMessage = 'How are you Jeff?';
-        //test in feature
+        //test in feature2
 
         HelloWorld myHelloWorld = new HelloWorld();
         String message = myHelloWorld.hey(name);
